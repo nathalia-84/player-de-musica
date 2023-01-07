@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Player de Música</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="player big">
+                <div class="track-art"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-backward"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-forward"></i>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+                    <div class="current-time">00:00</div>
+                    <div class="total-duration">00:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="player medium">
+                <div class="medium-small-wrapper">
+                    <div class="track-art"></div>
+                    <div class="medium-small-wrapper-name-artist">
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-backward"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-forward"></i>
+                    </div>
+                </div>
+                <div class="slider-container">
+                    <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+                    <div class="current-time">00:00</div>
+                    <div class="total-duration">00:00</div>
+                </div>
+            </div>
+            <div class="player small">
+                <div class="medium-small-wrapper">
+                    <div class="track-art"></div>
+                    <div class="medium-small-wrapper-name-artist">
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
+                    </div>
+                    
+                </div>
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-backward"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-forward"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

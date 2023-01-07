@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: solid 2px red;
+    height: 25rem;
+    width: 60%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.container .left {
+    border: solid 2px purple;
+    height: 100%;
+    width: 45%;
+}
+
+.container .right {
+    border: solid 2px yellow;
+    height: 100%;
+    width: 55%;
+}
+
+.player.medium {
+    border: solid 2px green;
+    height: 55%;
+}
+
+.player.small {
+    border: solid 2px blue;
+    height: 45%;
+}
+
+.player {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.player.big .track-art {
+    width: 100%;
+    text-align: center;
+}
+
+.player.big .track-name {
+    width: 100%;
+    text-align: center;
+}
+
+.player.big .track-artist {
+    width: 100%;
+    text-align: center;
+}
+
+.player .buttons {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player .slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.player .slider-container .seek-slider {
+    width: 100%;
+}
+
+.player .medium-small-wrapper {
+    display: flex;
+    width: 100%;
+    border: solid 2px orange;;
+}
+
+
+
+.player .track-art {
+    width: 5rem;
+    height: 5rem;
+    background-color: blueviolet;
+}
+
+.player.big .track-art {
+    width: 10rem;
+    height: 10rem;
+    background-color: blueviolet;
+}
