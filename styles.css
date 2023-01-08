@@ -40,11 +40,6 @@ body {
     margin-left: .5rem;
 }
 
-.player.big {
-    height: 100%;
-    margin-right: .5rem;
-}
-
 .player {
     display: flex;
     flex-wrap: wrap;
@@ -52,9 +47,16 @@ body {
     justify-content: center;
 
     background-color: rgb(43, 33, 66);
-    border-radius: 1rem;
+    border-radius: .5rem;
 
-    padding: .5rem .5rem;
+    padding: 1rem 1.5rem;
+}
+
+.player.big {
+    height: 100%;
+    margin-right: .5rem;
+    padding: 2rem 2rem;
+    text-align: right;
 }
 
 .player.big .track-art {
@@ -64,25 +66,28 @@ body {
 
 .player.big .track-name {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .player.big .track-artist {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .player .buttons {
     width: 100%;
-    text-align: center;
     display: flex;
     justify-content: space-evenly;
 }
 
 .player .slider-container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    font-size: .8rem;
+    color: rgb(151, 151, 151);
 }
 
 .player .slider-container .seek-slider {
@@ -95,13 +100,11 @@ body {
 
 }
 
-
-
 .player .track-art {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: rgb(179, 153, 205);
-    border-radius: 1rem;
+    border-radius: .3rem;
 }
 
 .player.big .track-art {
@@ -110,10 +113,20 @@ body {
 }
 
 .medium-small-wrapper-name-artist {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
     padding-top: .5rem;
 }
 
 .buttons {
     color: rgb(227, 225, 228);
+}
+
+.track-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.track-artist {
+    font-size: 1rem;
+    color: rgb(151, 151, 151);
 }
