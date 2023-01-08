@@ -56,20 +56,9 @@ body {
     height: 100%;
     margin-right: .5rem;
     padding: 2rem 2rem;
-    text-align: right;
 }
 
-.player.big .track-art {
-    width: 100%;
-    text-align: center;
-}
-
-.player.big .track-name {
-    width: 100%;
-    text-align: left;
-}
-
-.player.big .track-artist {
+.big-wrapper-name-artist {
     width: 100%;
     text-align: left;
 }
@@ -78,6 +67,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.player.big .buttons {
+    justify-content: space-between;
 }
 
 .player .slider-container {
@@ -92,6 +85,7 @@ body {
 
 .player .slider-container .seek-slider {
     width: 100%;
+    margin-bottom: .3rem;
 }
 
 .player .medium-small-wrapper {
