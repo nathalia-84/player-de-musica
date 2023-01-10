@@ -4,11 +4,11 @@
 <p align="left">Um player de música feito para o desafio #01 do #boraCodar da @Rocketseat.</p> 
 
 <h1 align="center">
-  <img alt="Player de Música" src="./assets/captura9.PNG" />
+  <img alt="Player de Música" src="./assets/captura10.PNG" />
 </h1>
 
 <h1 align="center">
-  <img alt="Player de Música" src="./assets/captura10.PNG" />
+  <img alt="Player de Música" src="./assets/captura9.PNG" />
 </h1>
 
 ### Features
