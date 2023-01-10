@@ -12,7 +12,7 @@ body {
 .container {
     height: 25rem;
     width: 50%;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -30,14 +30,14 @@ body {
 
 .player.medium {
     height: 55%;
-    margin-bottom: 1rem;
-    margin-left: .5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
 }
 
 .player.small {
-    height: calc(45% - 1rem);
-    margin-top: 1rem;
-    margin-left: .5rem;
+    height: calc(45% - 1.5rem);
+    margin-top: 1.5rem;
+    margin-left: 1rem;
 }
 
 .player {
@@ -67,6 +67,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    cursor: pointer;
 }
 
 .player.big .buttons {
@@ -85,13 +86,12 @@ body {
 
 .player .slider-container .seek-slider {
     width: 100%;
-    margin-bottom: .3rem;
+    margin-bottom: .5rem;
 }
 
 .player .medium-small-wrapper {
     display: flex;
     width: 100%;
-
 }
 
 .player .track-art {
@@ -99,7 +99,10 @@ body {
     height: 4rem;
     background-color: rgb(179, 153, 205);
     border-radius: .3rem;
+    background-size: cover;
 }
+
+
 
 .player.big .track-art {
     width: 10rem;
@@ -107,7 +110,7 @@ body {
 }
 
 .medium-small-wrapper-name-artist {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-top: .5rem;
 }
 
@@ -123,4 +126,72 @@ body {
 .track-artist {
     font-size: 1rem;
     color: rgb(151, 151, 151);
+}
+
+.seek-slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    height: .3rem;
+    background-color: rgb(94,89,111);
+    border-radius: .2rem;
+    background-image: linear-gradient(rgb(227, 225, 228), rgb(227, 225, 228));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.seek-slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: .3rem;
+    height: .3rem;
+    background-color: rgb(227, 225, 228);
+    border-radius: .3rem;
+    
+    transition: background .3s ease-in-out;
+}
+
+.animate {
+    animation: bop 3s infinite linear;
+}
+
+@keyframes bop {
+    0% {
+        transform: scale(1)
+    }
+    25% {
+        transform: scale(0.95)
+    }
+    50% {
+        transform: scale(1.05)
+    }
+    75% {
+        transform: scale(0.95)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+@media screen and (max-width: 760px) {
+
+    .container {
+        height: 25rem;
+        width: 80%;
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+    
+    .container .left {
+        height: 100%;
+        width: 100%;
+    }
+    .container .right {
+        display: none;
+    }
 }
