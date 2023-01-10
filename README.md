@@ -1,7 +1,7 @@
 # Player de Música
 
 ## Descrição do Projeto
-<p align="left">Um player de música feito para o desafio #01 do #boraCodar da @Rocketseat.</p> 
+<p align="left">Um player de música feito para o desafio #01 do #boraCodar da @Rocketseat. Com músicas do <a href="https://freemusicarchive.org/home">Free Music Archive</a>.</p> 
 
 <h1 align="center">
   <img alt="Player de Música" src="./assets/captura10.PNG" />
