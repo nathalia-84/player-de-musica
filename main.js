@@ -88,7 +88,7 @@ function playTrack(){
     
     for(let i=0; i<3; i++) {
         track_art[i].classList.add('animate');
-        playpause_btn[i].innerHTML = '<i class="fa fa-pause"></i>';
+        playpause_btn[i].innerHTML = '<i class="fa-solid fa-pause"></i>';
     }
     
 }
@@ -98,7 +98,7 @@ function pauseTrack(){
     
     for(let i=0; i<3; i++) {
         track_art[i].classList.remove('animate');
-        playpause_btn[i].innerHTML = '<i class="fa fa-play"></i>';
+        playpause_btn[i].innerHTML = '<i class="fa-solid fa-play"></i>';
     }
     
 }

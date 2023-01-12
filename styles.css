@@ -67,6 +67,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    
+}
+
+.fa-solid {
     cursor: pointer;
 }
 
